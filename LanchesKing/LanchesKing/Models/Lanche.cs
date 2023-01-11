@@ -24,7 +24,7 @@ namespace LanchesKing.Models
         [MinLength(20, ErrorMessage = "Descricao detalhada deve ter no minimo {1} Caracteres")]
         [MaxLength(200, ErrorMessage = "Descricao detalhada pode exceder {1} Caracteres")]
         [Display(Name = "Descricao Detalhada do Lanche")]
-        public string NDescricaoDetalhada { get; set; }
+        public string DescricaoDetalhada { get; set; }
 
         [Required(ErrorMessage = "Informe o preco do lanche")]
         [Column(TypeName ="decimal(10,2)")]
@@ -42,7 +42,7 @@ namespace LanchesKing.Models
 
         
         [Display(Name = "Preferido?")]
-        public bool IslanchePreferido { get; set; }
+        public bool IsLanchePreferido { get; set; }
 
         [Display(Name = "Estoque")]
         public bool EmEstoque { get; set; }

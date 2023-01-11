@@ -32,11 +32,11 @@ namespace LanchesKing.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nome = table.Column<string>(type: "nvarchar(80)", maxLength: 80, nullable: false),
                     DescricaoCurta = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
-                    NDescricaoDetalhada = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
+                    DescricaoDetalhada = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
                     Preco = table.Column<decimal>(type: "decimal(10,2)", nullable: false),
                     ImagemUrl = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: true),
                     ImagemThumbnailUrl = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: true),
-                    IslanchePreferido = table.Column<bool>(type: "bit", nullable: false),
+                    IsLanchePreferido = table.Column<bool>(type: "bit", nullable: false),
                     EmEstoque = table.Column<bool>(type: "bit", nullable: false),
                     CategoriaId = table.Column<int>(type: "int", nullable: false)
                 },
